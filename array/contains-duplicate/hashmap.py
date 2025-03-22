@@ -48,10 +48,23 @@ class Solution(object):
 
 
 # Optimized solution with set
+# Set items are unordered, unchangeable, and do not allow duplicate values
 
 # return len(nums) != len(set(nums))
+
+# This will compare the length of the nums array and the object length after set() method removes duplicates
 
 # ✅ Use a set instead of a dict because:
 # ✔ Less memory overhead (no need for key-value pairs)
 # ✔ Faster lookups (optimized for membership checks)
 # ✔ More concise code
+
+# 7️⃣ When to Use a set?
+# ✅ Need unique values (e.g., removing duplicates).
+# ✅ Fast lookups (O(1)) instead of searching a list (O(n)).
+# ✅ Mathematical set operations like union and intersection.
+
+# ❌ Don’t use set when order matters (use list instead).
+
+# Both {} and set() are used to create sets, but there is a key difference:
+
