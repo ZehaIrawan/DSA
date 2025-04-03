@@ -42,3 +42,10 @@ O(n) time complexity for problems where brute force might result in a O(n²) sol
 
 Great for problems involving contiguous subarrays or substrings and where the range of the window is adjustable.
 
+## Order of learning
+https://neetcode.io/roadmap
+
+3Sum - Leetcode 15 - Python
+https://youtu.be/jzZsG8n2R9A
+
+Two Sum => Two Sum II - Input Array Is Sorted => 3Sum
