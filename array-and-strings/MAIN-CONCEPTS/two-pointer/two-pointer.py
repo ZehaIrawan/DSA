@@ -47,6 +47,8 @@ target = 7
 #     https://leetcode.com/problems/reverse-string/description/
 
 # 3. ✅ Remove Duplicates in a Sorted Array
+#     https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 # 4. ✅ Move Zeroes to End
 # 5. ✅ Palindrome Check
 
