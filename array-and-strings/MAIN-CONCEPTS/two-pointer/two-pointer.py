@@ -40,8 +40,12 @@ target = 7
 
 # can be used on
 
-# 1.✅ Check if Array has a Pair that Sums to Target
+# 1. ✅ Check if Array has a Pair that Sums to Target (Two Sum) 
+#     https://leetcode.com/problems/two-sum
+
 # 2. ✅ Reverse a String / Array In-Place
+#     https://leetcode.com/problems/reverse-string/description/
+
 # 3. ✅ Remove Duplicates in a Sorted Array
 # 4. ✅ Move Zeroes to End
 # 5. ✅ Palindrome Check
