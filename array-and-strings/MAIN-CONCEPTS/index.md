@@ -51,3 +51,8 @@ https://neetcode.io/roadmap
 https://youtu.be/jzZsG8n2R9A
 
 Two Sum => Two Sum II - Input Array Is Sorted => 3Sum
+
+# most efficient way to understand logic to 
+# 1. place a breakpoint
+# 2. run and debug in vscode step by step
+# 3. see how variable changes
