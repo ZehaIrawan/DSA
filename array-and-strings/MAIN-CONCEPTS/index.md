@@ -56,3 +56,7 @@ Two Sum => Two Sum II - Input Array Is Sorted => 3Sum
 # 1. place a breakpoint
 # 2. run and debug in vscode step by step
 # 3. see how variable changes
+
+# Sequence
+# 1. Read and understand the challenge
+# 2. Figure out what is the goal
