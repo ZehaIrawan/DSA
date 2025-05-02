@@ -32,3 +32,33 @@ class Solution:
 #         check = "".join([char.lower() for char in s if char.isalnum()])
     
 #         return check == check[::-1]
+
+
+
+# two pointer (indices)
+# use a while loop, as long as first pointer (left) is less than the second pointer (left)
+# left pointer at the start of the array
+# right poitner at the end of the array
+# after each iteration:
+#   move the left pointer to right by 1
+#   move the right pointer to left by 1
+
+
+def isPalindrome(word):
+  l = 0
+  r = len(word) - 1
+
+  while l < r:
+    # you have acess to the first char and last char on every loop
+    if(word[l] != word[r]):
+      return f"{word} IS NOT A PALINDROME!"
+
+    l += 1
+    r -= 1
+  return f"{word} IS A PALINDROME!"
+
+print(isPalindrome('MADAM'))
+print(isPalindrome('NURSE'))
+print(isPalindrome('ROTOR'))
+print(isPalindrome('RACECAR'))
+print(isPalindrome('TOYOTA'))

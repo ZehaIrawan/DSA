@@ -1,9 +1,34 @@
 Two Pointers & Sliding Window:
 Two Pointers and Sliding Window are two related techniques used to optimize algorithms that involve arrays or strings.
 
+## 0 Brute force
+Nested loop
 
 ## 1. Two Pointers:
 The two-pointer technique involves using two pointers to iterate through a collection (like an array or string) simultaneously, often from different directions or with different step sizes. This technique can significantly reduce time complexity in some problems.
+
+```python
+def two_pointer_example(arr):
+    left = 0
+    right = len(arr) - 1
+
+    while left < right:
+        # Do something with arr[left] and arr[right]
+        
+        # Move the pointers based on logic
+        left += 1
+        right -= 1
+```
+See practice notes on `array-and-strings/valid-palindrome/solution.py`
+
+Now try to implement it on https://leetcode.com/problems/container-with-most-water/description/
+
+# How to practice
+
+## 1. Read the information
+## 2. If difficult try to rewrite it your own word
+## 3. Follow it step by step, write down every thoughts
+
 
 How it Works:
 You maintain two pointers (indices/indexes) on the array or string.
@@ -52,7 +77,7 @@ https://youtu.be/jzZsG8n2R9A
 
 Two Sum => Two Sum II - Input Array Is Sorted => 3Sum
 
-# most efficient way to understand logic to 
+# most efficient way to understand logic to
 # 1. place a breakpoint
 # 2. run and debug in vscode step by step
 # 3. see how variable changes
