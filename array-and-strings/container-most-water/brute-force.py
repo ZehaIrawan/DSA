@@ -68,3 +68,38 @@ print(maxArea([1,8,6,2,5,4,8,3,7]))
         # max(res, min(heights[i], heights[j]) * (j - i))
 
         #https://neetcode.io/solutions/container-with-most-water
+
+        # largest_area = 0
+
+        # for i in range(len(height)):
+        #     for j in range(i+1, len(height)):
+        #         largest_area = max(largest_area, min(height[i],height[j]) * (j - i))
+        
+        # return largest_area
+
+largest_area = 0
+# l = 0
+# r = len(height)-1
+l, r = 0, len(heights) - 1
+# can be simplified with one line
+# also forgot to -1 from the length because it's 0 based index
+
+while l < r :
+# largest_area = max(largest_area, min(height[i],height[j]) * (j - i))
+# original statement is too long, better to break it up to 2 variables
+    area = min(height[l],height[r]) * (r - l)
+    largest_area = max(largest_area, area)
+# this is wrong but i can't seem to find the logic for l staying put and test the r
+# l += 1
+# r += 1
+    if height[l] <= height[r]:
+# if left side is less or equal to right side height
+# move the left side to next side
+        l += 1
+    else:
+# if right  side is smaller the move the right side to the next side    
+        r -= 1
+return largest_area
+
+
+# basically this solution starts at first index and last index and then compare the area with one loop
