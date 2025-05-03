@@ -21,7 +21,19 @@ def two_pointer_example(arr):
 ```
 See practice notes on `array-and-strings/valid-palindrome/solution.py`
 
-Now try to implement it on https://leetcode.com/problems/container-with-most-water/description/
+1. Palindrome [Easy]
+  - Two pointers, one at the start of the array and one at the end
+  - Compare character
+
+2. Two sum 2, input array sorted
+
+3. 3Sum
+
+4. Container with most water [Medium]
+  - Two pointers, one at the start of the array and one at the end
+  - Compare area
+
+5. Trapping Rain water [Hard]
 
 # How to practice
 
