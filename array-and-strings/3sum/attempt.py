@@ -19,4 +19,19 @@ class Solution:
         return hashmap
 
 
+# two pointer
+        
+        l = 0
+        r = len(nums) - 4
 
+        res = []
+
+        while l < r:
+            # this works but it doesnt need to be sequential
+            # need another way to reiterate remaining item
+            if((nums[l] + nums[l+1] + nums[l+2]) == 0):
+                res.append([nums[l], nums[l+1], nums[l+2]])
+            l += 1
+            # after looking at the solution the key is to sort the array first
+            # why sort? because then you don't have to check all item in the array
+        return res
