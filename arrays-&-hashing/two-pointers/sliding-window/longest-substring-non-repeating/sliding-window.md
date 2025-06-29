@@ -56,3 +56,15 @@ def lengthOfLongestSubstring(s):
     # Return the length of the longest substring without repeating characters
 
 ```
+
+Let’s use: s = "abcabcbb"
+| Step | `left` | `right` | char | Set       | Max Length |
+| ---- | ------ | ------- | ---- | --------- | ---------- |
+| 1    | 0      | 0       | a    | {a}       | 1          |
+| 2    | 0      | 1       | b    | {a, b}    | 2          |
+| 3    | 0      | 2       | c    | {a, b, c} | 3          |
+| 4    | 0→1    | 3       | a    | {b, c, a} | 3          |
+| 5    | 1→2    | 4       | b    | {c, a, b} | 3          |
+| 6    | 2→3    | 5       | c    | {a, b, c} | 3          |
+| 7    | 3→4    | 6       | b    | {a, c, b} | 3          |
+| 8    | 4→5    | 7       | b    | {a, c, b} | 3          |
