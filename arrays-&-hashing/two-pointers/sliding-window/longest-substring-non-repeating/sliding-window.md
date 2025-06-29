@@ -22,16 +22,37 @@ Keep updating the max length as you go.
 
 ```py
 class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        char_set = set()
-        left = 0
-        max_length = 0
+def lengthOfLongestSubstring(s):
+    char_set = set()                 
+    # Set to store characters in the current window
 
-        for right in range(len(s)):
-            while s[right] in char_set:
-                char_set.remove(s[left])
-                left += 1
-            char_set.add(s[right])
-            max_length = max(max_length, right - left +1)
-        return max_length
+    # In Python, a set is a built-in data type that represents an unordered collection of unique elements. It is one of Python's four fundamental collection types, alongside lists, tuples, and dictionaries, each serving different purposes. 
+
+    left = 0                         
+    # Left pointer for the sliding window
+
+    max_length = 0                  
+    # Variable to track the maximum length found
+
+    for right in range(len(s)):     
+        # Move the right pointer from 0 to end of string
+
+        while s[right] in char_set: 
+            # If the current character is already in the set (duplicate)...
+
+            char_set.remove(s[left]) 
+            # Remove the leftmost character from the set
+
+            left += 1               
+            # Shrink the window by moving the left pointer to the right
+
+        char_set.add(s[right])      
+        # Add the current character to the set (now it's unique in the window)
+
+        max_length = max(max_length, right - left + 1) 
+        # Update max length if current window is longer
+
+    return max_length               
+    # Return the length of the longest substring without repeating characters
+
 ```
