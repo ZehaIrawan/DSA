@@ -41,3 +41,86 @@ class Solution:
 #       else:
 #           return [l + 1, r + 1]
 # guaranteed solution so no need return []
+
+
+# minimal form
+left,right = 0, len(numbers) - 1
+
+while left < len(numbers):
+    print(left,right)
+    left += 1
+
+# this is just moving the left pointer until it reaches the end of the array, and the right pointer is not moving at all.
+
+
+# passing test cases but time limit exceeded
+
+        left,right = 0, len(numbers) - 1
+
+        while left < right:
+            if numbers[left] + numbers[right] > target:
+                right -= 1
+            elif numbers[left] + numbers[right] == target:
+                return [left+1,right+1] 
+
+
+# feedback
+Your loop can get **stuck forever**.
+
+You only move `right` when the sum is too big, and you return when it matches.
+
+But you **never move `left`** when the sum is too small.
+
+So if:
+
+```py
+numbers[left] + numbers[right] < target
+```
+
+nothing changes → infinite loop.
+
+Fix:
+
+```py
+left, right = 0, len(numbers) - 1
+
+while left < right:
+    s = numbers[left] + numbers[right]
+
+    if s > target:
+        right -= 1
+    elif s < target:
+        left += 1
+    else:
+        return [left + 1, right + 1]
+```
+
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+    # since the requirement is no extra space we can't use hashmap
+    # brute force with nested loop can work but that will have O2(n) time complexity
+    # we need  to use two pointer solution
+    # the way that it works is by iterating from leftmost and rightmost at the same time
+    # and then move the index after each loop
+
+    # define left and right pointer
+    # later adjust the index 0 to 1 based
+  
+    # since it's 0 based index 
+    # need to decrease 1 from the length of the input array
+    # otherwise it will read 4 in array that mas index of 3
+
+    # we need to move the right pointer to the left before increasing the left pointer
+    # the sum of the left and right pointer is greater then target, move the right pointer to left by 1
+
+    # tweak needed is to handle move the left if total is smaller than target
+
+        left,right = 0, len(numbers) - 1
+
+        while left < right:
+            if numbers[left] + numbers[right] > target:
+                right -= 1
+            elif numbers[left] + numbers[right] < target:
+                left += 1
+            else:
+                return [left+1,right+1] 
