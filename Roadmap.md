@@ -8,6 +8,14 @@ https://youtu.be/jzZsG8n2R9A
 
 Two Sum => Two Sum II - Input Array Is Sorted => 3Sum
 
+## Arrays & Hashing
+- [x] Two Sum
+- [] https://leetcode.com/problems/contains-duplicate/description/
+- [] https://leetcode.com/problems/valid-anagram/description/
+
+## Two Pointers
+- [] Two Sum II - Input Array Is Sorted
+
 Don’t solve the **same exact LeetCode problem every day**. That’s mostly *memorization*, not skill.
 
 Better approach:
