@@ -1,0 +1,3 @@
+- Forgot to do checking before using the key in the dictionary, which causes a KeyError.
+- Also the logic is backwards, you want to check if the number is already a key in
+- Don't always use enumerate, it’s not needed here since you don’t use the index.
