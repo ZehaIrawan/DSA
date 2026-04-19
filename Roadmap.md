@@ -10,8 +10,10 @@ Two Sum => Two Sum II - Input Array Is Sorted => 3Sum
 
 ## Arrays & Hashing
 - [x] Two Sum
-- [] https://leetcode.com/problems/contains-duplicate/description/
-- [] https://leetcode.com/problems/valid-anagram/description/
+- [x] https://leetcode.com/problems/contains-duplicate/description/
+- [x] https://leetcode.com/problems/valid-anagram/description/
+
+19/4/2026s
 
 ## Two Pointers
 - [] Two Sum II - Input Array Is Sorted
